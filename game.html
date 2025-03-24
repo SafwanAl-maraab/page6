@@ -1,348 +1,878 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<style type="text/css">
+#main{
+width:300px;
+height:500px;
+margin:auto;
+position:relative;
+background-image:url(background1.png);
+top:70px;
+background-size: 100% 100%;
+/*
+border: solid  ;
+border-top:3px;
+border-bottom:3px;
+border-right:3px;
+border-width:15px;
+border-color:yellow ;*/
+overflow:hidden;
+}
+
+#street{
+width:100px;
+height:5000px;
+position:absolute;
+background:brown;
+background-image:url(street5.png);
+background-size: 100% 100%;
+left:0px;
+top:0px;
+z-index:1;
+}
+
+#street1{
+width:100px;
+height:500px;
+position:absolute;
+background:brown;
+background-image:url(street5.png);
+background-size: 100% 100%;
+left:0px;
+top:5000px;
+
+}
 
 
-<HTML>
-<HEAD>
-<META NAME="GENERATOR" Content="Microsoft Visual Studio 8.0">
-<TITLE>game title</TITLE>
-</HEAD>
+#street2{
+width:100px;
+height:500px;
+position:absolute;
+background:brown;
+background-image:url(street5.png);
+background-size: 100% 100%;
+left:0px;
+top:0px;
 
-<BODY>
-<style>
-#game
+}
+
+#street22{
+width:100px;
+height:500px;
+position:absolute;
+
+background-image:url(street5.png);
+background-size: 100% 100%;
+left:0px;
+top:4500px;
+
+}
+
+
+
+
+#street3{
+width:100px;
+height:500px;
+position:absolute;
+background:brown;
+background-image:url(street5.png);
+background-size: 100% 100%;
+left:0px;
+top:4000px;
+
+}
+
+#street4{
+width:100px;
+height:500px;
+position:absolute;
+background:brown;
+background-image:url(street5.png);
+background-size: 100% 100%;
+left:0px;
+top:3500px;
+
+}
+
+
+
+#street5{
+width:100px;
+height:500px;
+position:absolute;
+background:brown;
+background-image:url(street5.png);
+background-size: 100% 100%;
+left:0px;
+top:3000px;
+z-index:1;
+}
+
+
+
+
+#street6{
+width:100px;
+height:500px;
+position:absolute;
+background:brown;
+background-image:url(street5.png);
+background-size: 100% 100%;
+left:0px;
+top:2500px;
+z-index:1;
+}
+
+
+
+
+#street7{
+width:100px;
+height:500px;
+position:absolute;
+background:brown;
+background-image:url(street5.png);
+background-size: 100% 100%;
+left:0px;
+top:2000px;
+z-index:1;
+}
+
+
+
+#street8{
+width:100px;
+height:500px;
+position:absolute;
+background:brown;
+background-image:url(street5.png);
+background-size: 100% 100%;
+left:0px;
+top:1500px;
+z-index:1;
+}
+
+
+
+#street9{
+width:100px;
+height:500px;
+position:absolute;
+background:brown;
+background-image:url(street5.png);
+background-size: 100% 100%;
+left:0px;
+top:1000px;
+z-index:1;
+}
+
+
+
+
+#street10{
+width:100px;
+height:500px;
+position:absolute;
+background:brown;
+background-image:url(street5.png);
+background-size: 100% 100%;
+left:0px;
+top:500px;
+z-index:1;
+}
+
+#block11{
+width:50px;
+height:75px;
+position:absolute;
+background:none;
+background-image:url(car2.png);
+background-size: 100% 100%;
+left:101px;
+top:1000px;
+z-index:3;
+}
+
+#tb1{
+width:20px;
+height:20px;
+position:absolute;
+
+background-image:url(t1.png);
+background-size: 100% 100%;
+left:-2px;
+top:50px;
+z-index:3;
+}
+
+#tb2{
+width:20px;
+height:20px;
+position:absolute;
+
+background-image:url(t2.png);
+background-size: 100% 100%;
+left:-2px;
+top:3px;
+z-index:3;
+}
+#block12{
+width:50px;
+height:75px;
+position:absolute;
+background:none;
+background-image:url(car2.png);
+background-size: 100% 100%;
+left:101px;
+top:2500px;
+z-index:3;
+}
+
+#tbb1{
+width:20px;
+height:20px;
+position:absolute;
+
+background-image:url(t1.png);
+background-size: 100% 100%;
+left:-3px;
+top:50px;
+z-index:3;
+}
+
+#tbb2{
+width:20px;
+height:20px;
+position:absolute;
+
+background-image:url(t2.png);
+background-size: 100% 100%;
+left:-3px;
+top:3px;
+z-index:3;
+}
+
+#block13{
+width:50px;
+height:50px;
+position:absolute;
+background:none;
+background-image:url(ball1.png);
+background-size: 100% 100%;
+left:95px;
+top:1500px;
+z-index:3;
+}
+
+
+#block14{
+width:50px;
+height:50px;
+position:absolute;
+background:none;
+background-image:url(wood1.png);
+background-size: 100% 100%;
+left:95px;
+top:2000px;
+z-index:3;
+}
+#block15{
+width:50px;
+height:50px;
+position:absolute;
+background:none;
+background-image:url(ball2.png);
+background-size: 100% 100%;
+left:95px;
+top:3000px;
+z-index:3;
+}
+
+#block16{
+width:50px;
+height:50px;
+position:absolute;
+background:none;
+background-image:url(ball3.png);
+background-size: 100% 100%;
+left:95px;
+top:3500px;
+z-index:3;
+}
+#block17{
+width:50px;
+height:50px;
+position:absolute;
+background:none;
+background-image:url(wood2.png);
+background-size: 100% 100%;
+left:50px;
+top:4000px;
+z-index:3;
+}
+
+#block18{
+width:50px;
+height:50px;
+position:absolute;
+background:none;
+background-image:url(ball.png);
+background-size: 100% 100%;
+left:95px;
+top:4700px;
+z-index:3;
+}
+#green1{
+width:50px;
+height:50px;
+position:absolute;
+background:none;
+background-image:url(green1.png);
+background-size: 100% 100%;
+left:80px;
+top:500px;
+z-index:-3;
+}
+#green2{
+width:50px;
+height:50px;
+position:absolute;
+background:none;
+background-image:url(green1.png);
+background-size: 100% 100%;
+left:80px;
+top:1200px;
+z-index:-3;
+}
+#green3{
+width:50px;
+height:50px;
+position:absolute;
+background:none;
+background-image:url(green1.png);
+background-size: 100% 100%;
+left:80px;
+top:2050px;
+z-index:-3;
+}
+#green4{
+width:25px;
+height:25px;
+position:absolute;
+background:none;
+background-image:url(green1.png);
+background-size: 100% 100%;
+left:80px;
+top:3200px;
+z-index:-3;
+}
+
+#could1{
+width:60px;
+height:250px;
+position:absolute;
+background:none;
+background-image:url(cloud.png);
+background-size: 100% 100%;
+left:250px;
+top:500px;
+z-index:-3;
+}
+
+
+#could2{
+width:60px;
+height:250px;
+position:absolute;
+background:none;
+background-image:url(cloud.png);
+background-size: 100% 100%;
+left:230px;
+top:100px;
+z-index:-3;
+}
+#could3{
+width:60px;
+height:250px;
+position:absolute;
+background:none;
+background-image:url(cloud.png);
+background-size: 100% 100%;
+left:250px;
+top:1500px;
+z-index:-3;
+}
+#could4{
+width:60px;
+height:250px;
+position:absolute;
+background:none;
+background-image:url(cloud.png);
+background-size: 100% 100%;
+left:250px;
+top:2000px;
+z-index:-3;
+}
+
+#could5{
+width:60px;
+height:250px;
+position:absolute;
+background:none;
+background-image:url(cloud.png);
+background-size: 100% 100%;
+left:250px;
+top:3000px;
+z-index:-3;
+}
+
+
+#could6{
+width:60px;
+height:250px;
+position:absolute;
+background:none;
+background-image:url(cloud.png);
+background-size: 100% 100%;
+left:250px;
+top:3500px;
+z-index:-3;
+}
+
+
+#could7{
+width:60px;
+height:250px;
+position:absolute;
+background:none;
+background-image:url(cloud.png);
+background-size: 100% 100%;
+left:200px;
+top:5000px;
+z-index:-3;
+}
+
+#player{
+width:70px;
+height:135px;
+position:absolute;
+
+background-image:url(car2.png);
+background-size: 100% 100%;
+left:104px;
+top:30px;
+z-index:1;
+}
+
+
+#t1{
+width:30px;
+height:30px;
+position:absolute;
+
+background-image:url(t1.png);
+background-size: 100% 100%;
+left:-5px;
+top:95px;
+}
+
+#t2{
+width:30px;
+height:30px;
+position:absolute;
+
+background-image:url(t2.png);
+background-size: 100% 100%;
+left:-8px;
+top:10px;
+}
+
+#streetj{
+width:100px;
+height:500px;
+position:absolute;
+background:red;
+background-image:url(street5.png);
+background-size: 100% 100%;
+left:0px;
+top:0px;
+}
+
+
+#gas{
+width:100px;
+height:100px;
+position:absolute;
+border:none;
+background:none;
+background-image:url(gas1.png);
+background-size: 100% 100%;
+left:0px;
+top:400px;
+z-index:1;
+}
+
+#gas:active
 {
- width:300px;
- height:500px;
- border:solid  1px black;
- margin:auto;
- position: relative;
- top:70px;
- background:blue;
- overflow:hidden;
- }
- #player
- {
-     width:100px;
-     height:100px;
-     background:purple;
-     position:absolute;
-     top:400px;
-     left:100px;
-    /* right:0px;*/
-     
-     }
-   #block
-   {
-         width:100px;
-     height:100px;
-     background:black;
-     position:absolute;
-     top:100px;
-     left:100px;
-   /*  animation: move2 2s linear infinite;*/
-        }  
-        
-     #block2
-     {
-     width:100px;
-     height:100px;
-     background:yellow;
-     position:absolute;
-     top:100px;
-     left:100px;
-     /*  animation: move2 2s linear infinite;*/
-     }  
-  /*   @keyframes move2{
-    
-        0%{top:-100px;}
-       
-        
-        100%{
-        top:400px;
-        }
-     }
+background-image:url(gas2.png);
+border:none;
+}
 
-        
-        */
-        #right{
-        
-       width:100px;
-       height:100px;
-       backgroun:blue;
-       position:absolute;
-        top:400px;
-        left:0px;
-        border:0px solid red;
-        }
-        
-      
-   
-         
-         #left{
-         
-         width:100px;
-         height:100px;
-         backgroun:blue;
-         position:absolute;
-         top:400px;
-         left:200px;
-         border:0px solid red;
-         }
-         
-     #center{
-     
-     width:100px;
-     height:100px;
-     color:blue;
-     position:absolute;
-     top:400px;
-     left:100px;
-     border:0px solid yellow;
-     }
-     #cou{
-    
-   padding-left:20px;
-   
-     }
-     #mx{
-     padding-left:100px;
-     padding-top:100px;
-     }
+#breakk{
+width:100px;
+height:100px;
+position:absolute;
+border:none;
+background:none;
+background-image:url(break.png);
+background-size: 100% 100%;
+left:0px;
+top:300px;
+z-index:1;
+}
+
+#breakk:active
+{
+background-image:url(break2.png);
+border:none;
+}
+
+
+#up{
+width:100px;
+height:70px;
+position:absolute;
+border:none;
+background:none;
+background-image:url(up.png);
+background-size: 100% 100%;
+left:0px;
+top:10px;
+z-index:1;
+}
+
+
+
 </style>
-<video id="musicg" width="0" height="0" controls style="display:none">
-        <source src="sum.mp3" type="video/mp4">
-    </video>
-<video id="musicgame" width="0" height="0" controls style="display:none">
-        <source src="sum.mp3" type="video/mp4">
-    </video>
-<div id ="game"><h2  id="cou">0</h2><h1 style="display:none" id="mx"></h3>
-<div id="player"></div>
+<title>game</title>
+</head>
+<body>
+<div id="main">
+<div id="street">
+<div id="street1"></div>
+<div id="street2"></div>
+<div id="street22"></div>
+<div id="street3"></div>
+<div id="street4"></div>
+<div id="street5"></div>
+<div id="street6"></div>
+<div id="street7"></div>
+<div id="street8"></div>
+<div id="street9"></div>
+<div id="street10"></div>
+<div id="block11">
 
-<div id="block"></div>
-<div id="block2"></div>
-<button color="blue"bgcolor="blue"id="right" onclick="rightMove()">.</button>
-<button id="center" bgcolor="blue" onclick="centerr()">.</button>
-<button id="left" bgcolor="blue" onclick="leftMove()">.</button>
+<div id="tb1" ></div>
+<div id="tb2"></div></div>
+<div id="block12">
 
+<div id="tbb1" ></div>
+<div id="tbb2"></div>
+</div>
+<div id="block13"></div>
+<div id="block14"></div>
+<div id="block15"></div>
+<div id="block16"></div>
+<div id="block17"></div>
+<div id="block18"></div>
+<div id="green1"></div>
+<div id="green2"></div>
+<div id="green3"></div>
+<div id="green4"></div>
 
+<div id="could1"></div>
+<div id="could2"></div>
+<div id="could3"></div>
+<div id="could4"></div>
+<div id="could5"></div>
+<div id="could6"></div>
+<div id="could7"></div>
+</div>
+<div id="streetj"></div>
+<div id="player">
+<div id="t1" ></div>
+<div id="t2"></div></div>
 
+<button id="gas" onclick="speed()">.</button>
+<button id="breakk" onclick="slow()" >.</button>
+<button id="up" onclick="up()" >.</button>
 </div>
 
 
-<script>
-var right=document.getElementById("right")
-right.style.background="none";
 
-var center=document.getElementById("center")
-center.style.background="none";
-
-var left=document.getElementById("left")
-left.style.background="none";
-
-var player=document.getElementById("player");
-var block = document.getElementById("block");
-var block2 = document.getElementById("block2");
-player.style.left = "100px";
-block.style.left = "100px";
-block2.style.left = "100px";
-block.style.top = "50px";
-block2.style.top = "50px";
-player.style.top = "400px";
-
-var cou=document.getElementById("cou");
-var musicgame=document.getElementById("musicgame");
-var musicg=document.getElementById("musicg");
-var music=["win.mp3","unwin.mp3","move.mp3","run.mp3"]
-
-//var counter=document.getElementById("counter");
-var counter=0;
-function updateCounter() {
-
-    counter++;
-    cou.textContent = counter;
-    if(counter==2){
-    musicg.src=music[3];
-    musicg.play();
-    
-    }
-
-var mx=document.getElementById("mx");
-   
-   
-       if(counter==40){
-       
-       musicgame.src=music[0]
-       musicgame.play()
-  mx.style.display="block";
-   mx.innerHTML="المستوى الثاني"
-       
-       player.style.left = "100px";
-       block.style.left = "100px";
-       block2.style.left = "100px";
-       block.style.top = "50px";
-       block2.style.top = "50px";
-       player.style.top = "400px";
-       counterr=101;
-       counterrr=10;
-       
-       }
-    if(counter==43){
-    mx.style.display="none";
-    }
-    if(counter==80){
-    
-    mx.style.display="block";
-    mx.innerHTML="المستوى الثالث"
-    
-   
-    block.style.left = "100px";
-    block2.style.left = "100px";
-    block.style.top = "50px";
-    block2.style.top = "50px";
-   
-    counterr=101;
-    counterrr=10;
-    
-    }
+<script type="text/javascript">
+ var street=document.getElementById("street");
+ var streetj=document.getElementById("streetj");
+ var t1=document.getElementById("t1");
+ var t2=document.getElementById("t2");
+ var tb1=document.getElementById("tb1");
+ var tb2=document.getElementById("tb2");
+ var tbb1=document.getElementById("tbb1");
+ var tbb2=document.getElementById("tbb2");
+ var player=document.getElementById("player")
+ var hh= ["t1.png","t2.png"];
+t1.style.backgroundImage = `url(${hh[0]})`;
+ t2.style.backgroundImage = `url(${hh[1]})`;
+ tb1.style.backgroundImage = `url(${hh[0]})`;
+ tb2.style.backgroundImage = `url(${hh[1]})`;
+ tbb1.style.backgroundImage = `url(${hh[0]})`;
+ tbb2.style.backgroundImage = `url(${hh[1]})`;
+street.style.top="0px";
+streetj.style.top="0px";
+player.style.left="104px";
+var image=1;
+ var fast=0;
+ var counterstreet=0;
+ var speed1;
+  var speed2;
+   var speed3;
+    var speed4;
+     var speed5;
+      var speed6;
+       var speed7;
+        var speed8;
+         var speed9;
+          var speed10;
+           var speed11;
+            var speed12;
+             var speed13;
  
-  if(counter==83){
-  mx.style.display="none";
-  }
-   }
-
-
-setInterval(updateCounter, 1000); //  
-
-var counterr=0;
-function uupdateCounter() {
-counterr++;
-    
-    if (counterr ===2) {
-        block.style.left = "200px";
-          block2.style.left = "100px";
-        //  block.style.top="-2000px"
+          function updateCounterstreet() {
+          counterstreet--;
+          street.style.top=counterstreet+"px";
+          
+          if(counterstreet===-5000){
+          counterstreet=500;
+          }
+          if(image===1){
+          t1.style.backgroundImage = `url(${hh[1]})`;
+                  t2.style.backgroundImage = `url(${hh[0]})`;
+                  tb1.style.backgroundImage = `url(${hh[1]})`;
+                  tb2.style.backgroundImage = `url(${hh[0]})`;
+                  tbb1.style.backgroundImage = `url(${hh[1]})`;
+                  tbb2.style.backgroundImage = `url(${hh[0]})`;
+                  
+                  image++;
+          }
+          
+    else if(image===2){
+    t1.style.backgroundImage = `url(${hh[0]})`;
+              t2.style.backgroundImage = `url(${hh[1]})`;
+              tb1.style.backgroundImage = `url(${hh[0]})`;
+              tb2.style.backgroundImage = `url(${hh[1]})`;
+              tbb1.style.backgroundImage = `url(${hh[0]})`;
+              tbb2.style.backgroundImage = `url(${hh[1]})`;
+              image--;
     }
-
-   else if (counterr ===4) {
-        block.style.left = "0px";
-        block2.style.left = "200px";
-        //  block.style.top="-2000px"
-    }
-/*else if (counterr ===103) {
-     block.style.left = "200px";
-     block2.style.left = "200px";
-     //  block.style.top="-2000px"
-    
- }*/
-    else if (counterr === 6) {
-        block.style.left = "100px";
-          block2.style.left = "0px";
-        //  block.style.top="-2000px"
-
-    
-
+        
+        }
+          speed1= setInterval(updateCounterstreet, -100);
+          speed1= setInterval(updateCounterstreet, -100);
+          speed1= setInterval(updateCounterstreet, -100);
+          speed1= setInterval(updateCounterstreet, -100);
+             setInterval(updateCounterstreet, -100);
+           var  timee =0;
+           //زر الارتفاع 
+             function up(){
+             if(timee==0){
+             player.style.left="170px"
+             counterr=0;
+             timee=1;
+             }
+             }
+             
+             //المدة الارتفاع للسيارة
+             counterr=0;
+             function update(){
+             counterr++;
+             
+             if(counterr===3&&player.style.left==="170px"){
+             player.style.left="104px"
+             timee=0;
+             counterr=0;
+             }
+             
+             if(counterr===6){
+             counterr=0;
+             
+             }
+             
+             }
+             setInterval(update,500)
+             
+             
+             
+        function speed(){
+        fast++;
+          if(fast===1){
+          
+       
+      speed2= setInterval(updateCounterstreet, -100);
+            
+          }
+          
+          
+          else if(fast===2){
+          
+          speed3=setInterval(updateCounterstreet, -100);
          
-        counterr = 0;
-    }
-    
-
-}
-setInterval(uupdateCounter, 1200); //
-
-
-
-var counterrr=1;
-function uuupdateCounter() {
-
-    counterrr++;
+          
+          
+          }
+          
+          else if(fast===3){
+          
+         speed4= setInterval(updateCounterstreet, -100);
+         
+          }
+          
+          else if(fast===4){
+          
+         speed5= setInterval(updateCounterstreet, -100);
  
-
- 
-   if (counterrr === 1) {
-      block.style.top="50px";
-      block2.style.top="50px";
-   }
-else if (counterrr === 2) {
-      block.style.top="100px";
-      block2.style.top="100px";
-   }
-else if (counterrr === 3) {
-      block.style.top="150px";
-      block2.style.top="150px";
-   }
-   else if (counterrr === 4) {
-   block.style.top="200px";
-   block2.style.top="200px";
-   }
-   else if (counterrr === 5) {
-   block.style.top="250px";
-   block2.style.top="250px";
-   }
-   else if (counterrr === 6) {
-   block.style.top="300px";
-   block2.style.top="300px";
-   }
-   else if (counterrr === 7) {
-   block.style.top="320px";
-   block2.style.top="320px";
-   }
-   else if (counterrr === 8) {
-   block.style.top="350px";
-   block2.style.top="350px";
-   }
-   else if (counterrr === 9) {
-   block.style.top="380px";
-   block2.style.top="380px";
-   }
-   else if (counterrr === 10) {
-   block.style.top="400px";
-   block2.style.top="400px";
-   counterrr=1;
-   }
-   if (player.style.left ===block.style.left && block.style.top ==="380px"||player.style.left ===block2.style.left && block2.style.top ==="380px") {
+          
+          }
+          
+          else if(fast===5){
+          
+          speed6=setInterval(updateCounterstreet, -100);
+         
+          }
+          else if(fast===6){
+          
+        
+          speed7= setInterval(updateCounterstreet, -100);
+          }
+          else if(fast===7){
+      
+          speed8= setInterval(updateCounterstreet, -100);
+          }
+          
+          
+          else if(fast===8){
+          
+          
+          speed9= setInterval(updateCounterstreet, -100);
+          }
+          
+          else if(fast===9){
+          
+          speed10= setInterval(updateCounterstreet, -100);
+          }
+          
+          else if(fast===10){
+          
+          speed11= setInterval(updateCounterstreet, -100);
+          }
+          else if(fast===11){
+          
+          speed12= setInterval(updateCounterstreet, -100);
+          }
+          else if(fast===12){
+          
+          speed13= setInterval(updateCounterstreet, -100);
+          }
+          else if(fast===13){fast=12}
+          }
+          function slow(){
+          
+          fast--;
+         if(fast===9){
+          
+         fast=8;
+          
+          }
+          else if(fast===0){
+          
+         fast=1;
+          
+          }
+          else if(fast===1){
+          
+          clearInterval(speed2)
+         
+          }
+          
+          else if(fast===2){
+          clearInterval(speed3)
+          
+          }
+          else if(fast===3){
+          clearInterval(speed4)
+          
+          }
+          
+        
+       else if(fast===4){
        
-    
-       counterr = 0;
-       counterrr=0;
-       block.style.top="50px";
-       block2.style.top="50px";
-       block.style.left="100px"
-       block2.style.left="100px"
-       musicgame.src=music[1]
-       musicgame.play()
-       alert("انتهت اللعبة" + counter);
-   window.location.href="indisk.htm"
-      counter = 0;
+       clearInterval(speed5)
+       
+ 
+       
        }
-    
-
-    }
-
-
-setInterval(uuupdateCounter, 100); //
+ else if(fast===5){
+ 
+ clearInterval(speed6)
 
 
+ }
+ 
+ 
+else if(fast===6){
 
+clearInterval(speed7)
 
-function leftMove(){
-
-player.style.left="200px"
-
-musicgame.src=music[2]
-      musicgame.play()
-}
-function centerr(){
-player.style.left="100px";
-musicgame.src=music[2]
-      musicgame.play()
-}
-
-function rightMove(){
-player.style.left="0px";
-musicgame.src=music[2]
-      musicgame.play()
 
 }
+else if(fast===7){
 
+clearInterval(speed8)
+
+
+}
+else if(fast===8){
+
+clearInterval(speed9)
+}
+
+else if(fast===9){
+
+clearInterval(speed10)
+
+
+}
+else if(fast===10){
+
+clearInterval(speed11)
+
+
+}
+else if(fast===11){
+
+clearInterval(speed12)
+
+
+}
+else if(fast===12){
+
+clearInterval(speed13)
+
+
+}
+ }
 </script>
-</BODY>
-</HTML>
+
+</body>
+</html>
