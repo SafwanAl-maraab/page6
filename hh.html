@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض صورة</title>
+    <style>
+        #myImage {
+            display: none;
+            width: 300px; /* يمكنك تعديل الحجم كما تشاء */
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="showImage()">عرض الصورة</button>
+    <img id="myImage" src="cv.png" alt="صورة">
+
+    <script>
+        function showImage() {
+            var img = document.getElementById("myImage");
+            img.style.display = "block"; // لجعل الصورة تظهر
+        }
+    </script>
+
+</body>
+</html>
